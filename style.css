@@ -360,6 +360,19 @@ button:hover {
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
          }
+
+         form input {
+          display: block;
+          width: 200px;
+          height: 45px;
+          border-radius: 6px;
+          align-items: center;
+          border: none;
+          margin-bottom: 30px;
+          margin-top: 10px;
+        
+        }
+      
   
 }
 
