@@ -330,6 +330,17 @@ button:hover {
   color: white;
 }
 
+.videocontenedor{
+  display: grid;
+  width: 1600px;
+}
+
+.video {
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
 
 
 
