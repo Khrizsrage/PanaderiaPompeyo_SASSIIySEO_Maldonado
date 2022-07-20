@@ -16,7 +16,35 @@
 <body>
                             <!-- HEADER / NAVBAR -->
     <header>
+
         <div class="blackbox">
+            <p class="blackbox__mensaje">Panadería Chilena Artesanal</p>
+        </div>
+        <section class="navcontainer">
+            <a href="./index.html" class="logo"><img src="./assets/logoheader.png" alt="logo"></a>
+                <div class="topnav" id="myTopnav">
+                    <a href="./contacto.html">CONTACTO</a>
+                    <a href="./nosotros.html">NOSOTROS</a>
+                    <a href="./galeria.html">GALERIA</a>
+                    <a href="./pedidos.html">PEDIDOS</a>
+                    <a href="./productos.html">PRODUCTOS</a>
+                    <a href="./index.html">INICIO</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                      <script>function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                          x.className += " responsive";
+                        } else {
+                          x.className = "topnav";
+                        }
+                      }</script>
+                    </a>
+                </div>
+        </section>
+
+
+        <!-- <div class="blackbox">
             <p class="blackbox__mensaje">Panadería Chilena Artesanal</p>
         </div>
         <div class="header">
@@ -29,7 +57,7 @@
                 <a href="./nosotros.html">NOSOTROS</a>
                 <a href="./contacto.html">CONTACTO</a>
               </div>
-          </div>
+          </div> -->
     </header>
 
                         <!-- MAIN CONTENT -->
