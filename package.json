@@ -1,0 +1,22 @@
+{
+  "name": "tarea-20-07",
+  "version": "1.0.0",
+  "description": "desafio Coder Desarrollo Web SassII y SEO",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khrizsrage/PanaderiaPompeyo_SASSIIySEO_Maldonado.git"
+  },
+  "author": "Christian Maldonado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khrizsrage/PanaderiaPompeyo_SASSIIySEO_Maldonado/issues"
+  },
+  "homepage": "https://github.com/Khrizsrage/PanaderiaPompeyo_SASSIIySEO_Maldonado#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

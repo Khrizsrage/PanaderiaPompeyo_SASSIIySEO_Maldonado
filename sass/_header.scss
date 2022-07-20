@@ -1,0 +1,45 @@
+.header {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ececec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+  
+  .header a {
+    float: left;
+    color:  rgb(65, 65, 65);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+  .header a:hover {
+      background-color: #F7AD41;
+      color: white;
+    }
+  
+  
+    .header-menu {
+      margin-top: 30px;
+      margin-right: 200px;  
+      float: right;
+    }  
+  
+  .logo {
+      margin-left: 200px;
+      align-items: center;
+    }
+    
+  .logo:hover{
+    background-color: #ececec !important;
+  }
+  
