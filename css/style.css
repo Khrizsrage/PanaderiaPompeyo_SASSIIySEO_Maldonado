@@ -161,13 +161,15 @@ footer {
     font-size: 14px; }
 
 .logo {
-  background-color: #ececec;
+  background-color: #ffffff00;
   position: absolute;
   margin-top: 10px;
   margin-left: 100px;
   overflow: visible; }
+  .logo img {
+    width: 180px;
+    background-color: #ffffff00; }
 
-/* Add a black background color to the top navigation */
 .topnav {
   padding: 30px 100px;
   height: 100%;
@@ -175,7 +177,6 @@ footer {
   background-color: #ececec;
   overflow: hidden; }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   display: block;
@@ -185,18 +186,10 @@ footer {
   text-decoration: none;
   font-size: 14px; }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #F7AD41;
   color: black; }
 
-/* Add an active class to highlight the current page
-  .topnav a.active {
-    background-color:  #F7AD41;
-    color: rgb(150, 12, 12);
-  }
-   */
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none; }
 
@@ -350,8 +343,8 @@ footer {
     margin-right: 20px;
     float: right; }
   .logo {
-    margin-top: 20px;
-    margin-left: 440px;
+    margin-top: 10px;
+    margin-left: 420px;
     align-items: center; }
   .logo:hover {
     background-color: #ececec !important; }
@@ -397,11 +390,13 @@ footer {
   .header-menu {
     float: none; }
   .logo {
-    margin-top: 20px;
-    margin-left: 310px;
+    margin-top: 7px;
+    margin-left: 280px;
     align-items: center; }
-  .logo:hover {
-    background-color: #ececec !important; }
+    .logo img {
+      width: 45%; }
+    .logo .logo:hover {
+      background-color: #ececec !important; }
   .carrusel {
     display: none; }
   .products__grid {
@@ -449,10 +444,13 @@ footer {
 
 @media screen and (max-width: 425px) {
   .logo {
-    margin-left: 140px;
-    align-items: center; }
-  .logo:hover {
-    background-color: #ececec !important; }
+    margin-left: 120px;
+    align-items: center;
+    margin-top: 12px; }
+    .logo img {
+      width: 60%; }
+    .logo:hover {
+      background-color: #fafafa00 !important; }
   .titles {
     font-size: 20px;
     font-weight: 700;
@@ -491,13 +489,15 @@ footer {
 
 @media screen and (max-width: 375px) {
   .logo {
-    background-color: #ececec !important;
+    background-color: #ffffff00;
     position: absolute;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 120px;
     overflow: visible; }
+    .logo img {
+      width: 60%; }
   .logo:hover {
-    background-color: #ececec !important; }
+    background-color: #ffffff00 !important; }
   .titles {
     font-size: 20px;
     font-weight: 700;
