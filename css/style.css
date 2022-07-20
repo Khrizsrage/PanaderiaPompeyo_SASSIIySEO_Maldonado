@@ -300,7 +300,8 @@ footer {
 .text {
   width: 550px;
   max-width: 100%;
-  padding: 0 10px; }
+  padding: 0 10px;
+  color: white; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
