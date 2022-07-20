@@ -51,7 +51,7 @@
 }
 
   .topnav a:hover {
-    background-color:  #F7AD41;
+    // background-color:  #F7AD41;
     color: black;
   }
   
@@ -259,15 +259,6 @@
   }
 
 
-    .header a {
-        float: left;
-     }
-              
-      .header-menu {
-        margin-top: 30px;
-        margin-right: 20px;  
-        float: right;
-      }  
     
       .logo {
         margin-top: 10px;
@@ -334,33 +325,22 @@
   background-color: $Navbar ;
   overflow: hidden;
 }
-      
-
-.header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-menu {
-    float: none;
-  }
 
 .logo {
     margin-top: 7px;
     margin-left: 280px;
     align-items: center;
 
-    & img {
-      width: 45%;
-    }
-
-    .logo:hover{
-      background-color: $Navbar !important;
-    }
-  
+    // & img {
+    //   width: 45%;
+    // }
+    
   }
-          
-
+  
+  .logo:hover{
+    background-color: $Navbar !important;
+  }
+  
   .carrusel {
     display: none;
 }
@@ -440,9 +420,9 @@
       align-items: center;
       margin-top: 12px;
 
-    & img {
-      width: 60%;
-    }
+    // & img {
+    //   width: 60%;
+    // }
       &:hover{
         background-color: #fafafa00 !important;
       }
@@ -505,12 +485,12 @@
       .logo {
         background-color:#ffffff00;
         position: absolute;
-        margin-top: 20px;
-        margin-left: 120px;
+        margin-top: 10px;
+        margin-left: 100px;
         overflow: visible;
-        & img {
-          width: 60%;
-        }
+        // & img {
+        //   width: 60%;
+        // }
       }
       
             
@@ -552,6 +532,33 @@
         margin: 30px 0px;
         
       }
+
+      .topnav a {
+            
+        display: none;
+        float: right;
+      }
+    
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  
+    
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
     
       
     }

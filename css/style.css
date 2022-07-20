@@ -187,7 +187,6 @@ footer {
   font-size: 14px; }
 
 .topnav a:hover {
-  background-color: #F7AD41;
   color: black; }
 
 .topnav .icon {
@@ -336,12 +335,6 @@ footer {
 @media screen and (max-width: 1024px) {
   .carrusel {
     display: none; }
-  .header a {
-    float: left; }
-  .header-menu {
-    margin-top: 30px;
-    margin-right: 20px;
-    float: right; }
   .logo {
     margin-top: 10px;
     margin-left: 420px;
@@ -383,20 +376,12 @@ footer {
     grid: flex;
     background-color: #ececec;
     overflow: hidden; }
-  .header a {
-    float: none;
-    display: block;
-    text-align: left; }
-  .header-menu {
-    float: none; }
   .logo {
     margin-top: 7px;
     margin-left: 280px;
     align-items: center; }
-    .logo img {
-      width: 45%; }
-    .logo .logo:hover {
-      background-color: #ececec !important; }
+  .logo:hover {
+    background-color: #ececec !important; }
   .carrusel {
     display: none; }
   .products__grid {
@@ -447,8 +432,6 @@ footer {
     margin-left: 120px;
     align-items: center;
     margin-top: 12px; }
-    .logo img {
-      width: 60%; }
     .logo:hover {
       background-color: #fafafa00 !important; }
   .titles {
@@ -491,11 +474,9 @@ footer {
   .logo {
     background-color: #ffffff00;
     position: absolute;
-    margin-top: 20px;
-    margin-left: 120px;
+    margin-top: 10px;
+    margin-left: 100px;
     overflow: visible; }
-    .logo img {
-      width: 60%; }
   .logo:hover {
     background-color: #ffffff00 !important; }
   .titles {
@@ -520,4 +501,20 @@ footer {
     display: flex;
     gap: 15px;
     padding: 30px 0px;
-    margin: 30px 0px; } }
+    margin: 30px 0px; }
+  .topnav a {
+    display: none;
+    float: right; }
+  .topnav a.icon {
+    float: right;
+    display: block; }
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
