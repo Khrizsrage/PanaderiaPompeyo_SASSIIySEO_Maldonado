@@ -1,39 +1,55 @@
-.header {
-    width: 100%;
-    overflow: hidden;
-    background-color: #ececec;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    }
-  
-  .header a {
-    float: left;
-    color:  rgb(65, 65, 65);
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 14px;
-    border-radius: 4px;
-  }
-  
-  .header a.logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-  
-  .header a:hover {
-      background-color: #F7AD41;
+.blackbox {
+  padding-top: 10px;
+  padding-bottom: 1px;
+  width: 100%;
+  background-color: black;
+  &__mensaje {
+      margin-top: -1px;
       color: white;
-    }
-  
-  
-    .header-menu {
-      margin-top: 30px;
-      margin-right: 200px;  
-      float: right;
-    }  
-  
-  .logo:hover{
-    background-color: #ececec !important;
+      text-align: center;
+      letter-spacing: 5px;
+      font-size: 14px;
   }
+}
+
+.logo {
+  background-color:#ffffff00;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 100px;
+  overflow: visible;
+    & img {
+      width: 180px;
+      background-color: #ffffff00;
+    }
+  }
+
+
+
+.topnav {
+  padding:30px 100px ;
+  height: 100%;
+  grid: flex;
+  background-color: $Navbar ;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+  .topnav a:hover {
+    // background-color:  #F7AD41;
+    color: black;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+

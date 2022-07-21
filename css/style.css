@@ -37,52 +37,49 @@ h3 {
   margin-top: -25px;
   color: #838383; }
 
-button {
-  background-color: transparent;
-  border: 2px solid #efefef;
-  color: #F7AD41;
-  border-radius: 30px;
-  padding: 10px 30px;
-  cursor: pointer;
-  margin-top: 20px; }
-
-button:hover {
-  background-color: #F7AD41;
-  border: 2px solid #F7AD41;
-  color: white; }
-
-.header {
-  width: 100%;
-  overflow: hidden;
-  background-color: #ececec;
+.blackbox {
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 1px;
+  width: 100%;
+  background-color: black; }
+  .blackbox__mensaje {
+    margin-top: -1px;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 14px; }
 
-.header a {
-  float: left;
-  color: #414141;
+.logo {
+  background-color: #ffffff00;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 100px;
+  overflow: visible; }
+  .logo img {
+    width: 180px;
+    background-color: #ffffff00; }
+
+.topnav {
+  padding: 30px 100px;
+  height: 100%;
+  grid: flex;
+  background-color: #ececec;
+  overflow: hidden; }
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
   text-align: center;
-  padding: 12px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 14px;
-  line-height: 14px;
-  border-radius: 4px; }
+  font-size: 14px; }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold; }
+.topnav a:hover {
+  color: black; }
 
-.header a:hover {
-  background-color: #F7AD41;
-  color: white; }
-
-.header-menu {
-  margin-top: 30px;
-  margin-right: 200px;
-  float: right; }
-
-.logo:hover {
-  background-color: #ececec !important; }
+.topnav .icon {
+  display: none; }
 
 footer {
   text-align: center;
@@ -155,49 +152,18 @@ footer {
 .iglogo i:hover {
   color: white; }
 
-.blackbox {
-  padding-top: 10px;
-  padding-bottom: 1px;
-  width: 100%;
-  background-color: black; }
-  .blackbox__mensaje {
-    margin-top: -1px;
-    color: white;
-    text-align: center;
-    letter-spacing: 5px;
-    font-size: 14px; }
-
-.logo {
-  background-color: #ffffff00;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 100px;
-  overflow: visible; }
-  .logo img {
-    width: 180px;
-    background-color: #ffffff00; }
-
-.topnav {
-  padding: 30px 100px;
-  height: 100%;
-  grid: flex;
-  background-color: #ececec;
-  overflow: hidden; }
-
-.topnav a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 14px; }
-
-.topnav a:hover {
-  color: black; }
-
-.topnav .icon {
-  display: none; }
+.buttonbase, .button {
+  background-color: transparent;
+  border: 2px solid #efefef;
+  color: #F7AD41;
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 20px; }
+  .buttonbase:hover, .button:hover {
+    background-color: #F7AD41;
+    border: 2px solid #F7AD41;
+    color: white; }
 
 /* Carrusel */
 .carrusel {
@@ -230,14 +196,15 @@ footer {
   position: relative;
   cursor: pointer;
   border-radius: 6px; }
-  .parent:hover .child {
-    transform: scale(1.3); }
 
 .child {
   height: 100%;
   width: 100%;
   background-size: cover;
   transition: all 3s; }
+
+.bg {
+  border: #efefef; }
 
 .bg-one {
   background-image: url(../assets/card-panaderia.jpg); }
@@ -257,7 +224,6 @@ footer {
   font-weight: 400;
   letter-spacing: 4px;
   line-height: 1.5;
-  background-color: transparent;
   border: 1px solid transparent;
   padding: 6px 12px;
   border-radius: 4px;
@@ -274,6 +240,45 @@ footer {
     color: #F7AD41;
     background-color: #414141;
     border-color: #414141; }
+
+.botoncate, .btncatg {
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: #00000091;
+  color: #bebebe;
+  border-color: #bebebe; }
+  .botoncate__description {
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative; }
+  .botoncate:hover, .btncatg:hover {
+    color: #F7AD41;
+    background-color: #414141;
+    border-color: #414141; }
+
+.btn__cat {
+  border: 2px solid #333;
+  background-color: #F7AD41;
+  padding: 20px;
+  border-radius: 5px; }
+
+.btn__cat2 {
+  border: 2px solid #333;
+  background-color: #eecece;
+  padding: 10px;
+  border-radius: 10px; }
+
+.btn__cat3 {
+  border: 2px solid #333;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px; }
 
 /* Formulario contacto */
 .contendorContacto {

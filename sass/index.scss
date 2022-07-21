@@ -3,61 +3,36 @@
 @import 'header';
 @import 'footer';
 
+
+  // EXTENDS
+
+  .buttonbase {
+    background-color: transparent;
+    border:  2px solid #efefef;
+    color: #F7AD41;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 20px;
   
-.blackbox {
-  padding-top: 10px;
-  padding-bottom: 1px;
-  width: 100%;
-  background-color: black;
-  &__mensaje {
-      margin-top: -1px;
+    &:hover {
+      background-color: #F7AD41;
+      border:  2px solid #F7AD41;
       color: white;
-      text-align: center;
-      letter-spacing: 5px;
-      font-size: 14px;
-  }
-}
-
-.logo {
-  background-color:#ffffff00;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 100px;
-  overflow: visible;
-    & img {
-      width: 180px;
-      background-color: #ffffff00;
     }
+    
   }
 
-
-
-.topnav {
-  padding:30px 100px ;
-  height: 100%;
-  grid: flex;
-  background-color: $Navbar ;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-  .topnav a:hover {
-    // background-color:  #F7AD41;
-    color: black;
-  }
+    // Mixing
   
-  .topnav .icon {
-    display: none;
-  }
+    
+
+  
+  
+.button {
+  @extend .buttonbase;
+  
+}
 
 
         /* Carrusel */
@@ -106,10 +81,10 @@
       cursor: pointer;
       border-radius: 6px;
       
-      &:hover .child {
-        transform: scale(1.3);
+      // &:hover .child {
+      //   transform: scale(1.3);
       
-      }
+      // }
     
     }
     
@@ -120,6 +95,11 @@
       background-size: cover;
       transition: all 3s;
     
+    }
+
+    .bg {
+
+      border: #efefef;
     }
     
     .bg-one{
@@ -133,19 +113,52 @@
     .bg-three{
       background-image: url(../assets/card-banqueteria.jpg);
     }
-    
-    
+
+                // MIXIN
+
     .holder {
       margin-top: -120px;
       margin-left: 40px;
     }
+
+
     
+    // .categoria {
+    //   position: relative;
+    //   font-weight: 400;
+    //   letter-spacing: 4px;
+    //   line-height: 1.5;
+    //   background-color: transparent;
+    //   border: 1px solid transparent;
+    //   padding: 6px 12px;
+    //   border-radius: 4px;
+    //   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    //   background-color: #00000091;
+    //   color: $GrayLight;
+    //   border-color: $GrayLight;
+
+    //   &__description {
+    //     color: white;
+    //     margin-top: 20px;
+    //     margin-right: 20px;
+    //     position: relative;
+              
+    //   }
+
+    
+    //   &:hover {
+    //     color:$trigo ;
+    //     background-color: $Gray65;
+    //     border-color: $Gray65;
+
+    //   }
+    // }
+
     .categoria {
       position: relative;
       font-weight: 400;
       letter-spacing: 4px;
       line-height: 1.5;
-      background-color: transparent;
       border: 1px solid transparent;
       padding: 6px 12px;
       border-radius: 4px;
@@ -160,8 +173,8 @@
         margin-right: 20px;
         position: relative;
               
-      }    
-  
+      }
+
     
       &:hover {
         color:$trigo ;
@@ -170,6 +183,73 @@
 
       }
     }
+
+
+
+    .botoncate {
+      position: relative;
+      font-weight: 400;
+      letter-spacing: 4px;
+      line-height: 1.5;
+      // border: 1px solid transparent;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      background-color: #00000091;
+      color: $GrayLight;
+      border-color: $GrayLight;
+      &__description {
+        color: white;
+        margin-top: 20px;
+        margin-right: 20px;
+        position: relative;
+              
+      }
+
+    
+      &:hover {
+        color:$trigo ;
+        background-color: $Gray65;
+        border-color: $Gray65;
+
+      }
+
+
+    }
+
+
+    .btncatg {
+      @extend .botoncate;
+      }
+
+
+
+@mixin botoncate ( $bg, $size,$borde) { 
+  border: 2px solid #333;
+  background-color:  $bg;
+  padding: $size;
+  border-radius: $borde; 
+}
+
+.btn__cat {
+  @include botoncate ( #F7AD41, 20px, 5px);
+}
+
+
+.btn__cat2 {
+  @include botoncate( #eecece, 10px, 10px);
+}
+
+
+.btn__cat3 {
+  @include botoncate( black, 5px, 15px);
+}
+
+
+
+
+
+
 
         /* Formulario contacto */
 
@@ -330,10 +410,6 @@
     margin-top: 7px;
     margin-left: 280px;
     align-items: center;
-
-    // & img {
-    //   width: 45%;
-    // }
     
   }
   
